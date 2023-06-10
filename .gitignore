@@ -79,4 +79,4 @@ ContentRaw/
 
 # Remove all downloadable content
 Content/*/
-!Content/Platform2D
+!Content/Luc3D
