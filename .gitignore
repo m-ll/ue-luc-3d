@@ -77,6 +77,18 @@ DerivedDataCache/*
 
 ContentRaw/
 
+# Remove all Platforms/HoloLens
+# - specify HoloLens to see if somedays there will be other stuff than HoloLens
+# - make it absolute to avoid excluding other subdirectories with the same name
+/Platforms/HoloLens
+
 # Remove all downloadable content
+# Remove all content
 Content/*/
+# Keep only project assets and actors in map assets
 !Content/Luc3D
+!Content/__*__
+# Remove actors in map assets
+Content/__*__/*
+# But keep only ones for the project
+!Content/__*__/Luc3D
